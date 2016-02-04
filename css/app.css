@@ -1,0 +1,249 @@
+.wechat-hint {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background: url(https://2015.zhihu.com/static/img/share/arrow-up.png) 92% 3% no-repeat rgba(0, 0, 0, .5);
+    background-size: 110.5px 75px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s
+}
+
+.wechat-hint.fx-show {
+    visibility: visible;
+    opacity: 1
+}
+
+html.inapp .wechat-hint {
+    background-image: url(https://2015.zhihu.com/static/img/share/arrow-down.png);
+    background-position: 92% 97%;
+    background-size: 110.5px 77.5px
+}
+
+html.ios.safari:not(.inapp):not(.mobilechrome) .wechat-hint {
+    background-image: url(https://2015.zhihu.com/static/img/share/arrow-center.png);
+    background-position: 50% 97%;
+    background-size: 63.5px 87px
+}
+
+.invisible {
+    visibility: hidden
+}
+
+.visible {
+    visibility: visible !important
+}
+
+.share-modal-wrap {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(35, 39, 53, .8);
+    z-index: 100
+}
+
+.share-modal-wrap .share-modal {
+    position: absolute;
+    width: 540px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    margin-left: -270px;
+    margin-top: -125px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #131622;
+    color: #20f440
+}
+
+.share-modal-wrap .share-modal ul {
+    float: left;
+    width: 48%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #20f440;
+    list-style: none
+}
+
+.share-modal-wrap .share-modal .share-modal--item {
+    height: 95px;
+    line-height: 95px;
+    cursor: default;
+    font-size: .175rem
+}
+
+.share-modal-wrap .share-modal .share-modal--item.weibo {
+    cursor: pointer
+}
+
+.share-modal-wrap .share-modal .icon {
+    height: 25px;
+    margin-right: 10px;
+    line-height: 95px;
+    vertical-align: middle
+}
+
+.share-modal-wrap .share-modal .qrcode {
+    float: right;
+    height: 100%;
+    border: 8px solid #fff
+}
+
+.invisible {
+    visibility: hidden
+}
+
+.visible {
+    visibility: visible !important
+}
+
+@-webkit-keyframes popup {
+    0% {
+        -webkit-transform: translateZ(0) scale(0);
+        transform: translateZ(0) scale(0)
+    }
+    to {
+        -webkit-transform: translateZ(0) scale(1);
+        transform: translateZ(0) scale(1)
+    }
+}
+
+@keyframes popup {
+    0% {
+        -webkit-transform: translateZ(0) scale(0);
+        transform: translateZ(0) scale(0)
+    }
+    to {
+        -webkit-transform: translateZ(0) scale(1);
+        transform: translateZ(0) scale(1)
+    }
+}
+
+.popup {
+    -webkit-animation: popup .5s cubic-bezier(.54, -.22, .46, 1.72) 0s 1 forwards;
+    animation: popup .5s cubic-bezier(.54, -.22, .46, 1.72) 0s 1 forwards
+}
+
+.img-bonus {
+    visibility: hidden
+}
+
+.img-bonus.show {
+    visibility: visible
+}
+
+.inline-img {
+    margin-left: 10px;
+    vertical-align: middle;
+    height: .3rem
+}
+
+.multiline-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: .6rem
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.blink {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: blink .5s linear 0s infinite alternate;
+    animation: blink .5s linear 0s infinite alternate
+}
+
+.bonus-animation.first-invite {
+    color: #20f440;
+    height: .4rem;
+    line-height: .4rem
+}
+
+.bonus-animation.first-invite img {
+    margin: 0 10px;
+    vertical-align: middle;
+    width: .3rem
+}
+
+@-webkit-keyframes moveToLeft {
+    0% {
+        left: 100px;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    1% {
+        left: 100px
+    }
+    1%, 99% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+    }
+    99% {
+        left: 1px
+    }
+    to {
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes moveToLeft {
+    0% {
+        left: 100px;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    1% {
+        left: 100px
+    }
+    1%, 99% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+    }
+    99% {
+        left: 1px
+    }
+    to {
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+.bonus-animation.first-invite .name-right {
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    -webkit-animation: moveToLeft 1s ease-in-out .2s 1 forwards;
+    animation: moveToLeft 1s ease-in-out .2s 1 forwards
+}
+
+.gradient .data-value {
+    color: #ffff1b !important
+}

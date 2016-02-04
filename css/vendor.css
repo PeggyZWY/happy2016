@@ -1,0 +1,406 @@
+.invisible {
+    visibility: hidden
+}
+
+.visible {
+    visibility: visible !important
+}
+
+.terminal {
+    overflow: hidden
+}
+
+.paragraph {
+    position: relative;
+    max-width: 600px;
+    padding-bottom: .1rem
+}
+
+.paragraph .line {
+    width: 100%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-family: Courier;
+    line-height: .3rem
+}
+
+.paragraph .line:after {
+    content: "n";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both
+}
+
+.paragraph .line .data-name {
+    color: #aab2bf
+}
+
+.paragraph .line .data-value {
+    color: #20f440
+}
+
+.paragraph .line .data-value .particle {
+    display: inline-block
+}
+
+.paragraph .line .data-value .mock-cursor {
+    display: inline
+}
+
+.paragraph .line .line-text {
+    padding: 0;
+    margin: 0;
+    line-height: .3rem
+}
+
+.paragraph .line .left {
+    float: left
+}
+
+.paragraph .line .right {
+    overflow: hidden
+}
+
+@-webkit-keyframes blink {
+    0%, 50% {
+        opacity: 1
+    }
+    51%, to {
+        opacity: 0
+    }
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1
+    }
+    51%, to {
+        opacity: 0
+    }
+}
+
+.paragraph .mock-cursor {
+    background-color: #aab2bf;
+    -webkit-animation: blink .5s linear .2s infinite alternate;
+    animation: blink .5s linear .2s infinite alternate
+}
+
+.topicParagraph .topic-block {
+    display: inline-block;
+    margin: 2px 4px;
+    border: 1px solid #20f440;
+    padding: 0 3px;
+    line-height: 2;
+    word-break: keep-all;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.topicParagraph .topic-block.bonus {
+    border-color: red;
+    color: red
+}
+
+.vertical-center {
+    margin: 0 auto;
+    width: 3.25rem
+}
+
+section.achievement .achievement-title {
+    display: block
+}
+
+section.achievement .achievement-list-wrap {
+    margin: 0 auto;
+    width: 3.25rem;
+    position: relative
+}
+
+section.achievement .achievement-list-wrap .achievement-bonus {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1rem
+}
+
+section.achievement .achievement-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-height: 1rem
+}
+
+section.achievement .achievement-list li {
+    width: 100%
+}
+
+section.achievement .achievement-list li span {
+    display: inline-block;
+    visibility: hidden;
+    white-space: pre-wrap
+}
+
+section.achievement .achievement-list li .left {
+    width: 40%;
+    overflow: hidden;
+    color: #aab2bf
+}
+
+section.achievement .achievement-list li .right {
+    vertical-align: top;
+    width: 60%;
+    color: #20f440
+}
+
+section.achievement .achievement-list .nacl-club {
+    color: #20f440;
+    margin-top: .1rem
+}
+
+section.achievement .achievement-list .badge {
+    visibility: hidden;
+    vertical-align: middle;
+    margin-left: .05rem;
+    height: .3rem
+}
+
+section.achievement .btn-group {
+    opacity: 1;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    margin: 0 auto;
+    width: 3.25rem
+}
+
+section.achievement .btn-group.hide {
+    opacity: 0
+}
+
+section.achievement .btn-group:after {
+    content: "";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both
+}
+
+section.achievement .btn-group .share-btn {
+    display: block;
+    width: 90%;
+    margin: 0 auto
+}
+
+section.achievement.pc {
+    padding-top: .3rem;
+    padding-bottom: .3rem
+}
+
+section.achievement.pc .achievement-title {
+    margin: 0 auto;
+    width: 3.25rem
+}
+
+section.achievement.pc .achievement-list-wrap {
+    min-height: 3rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem
+}
+
+section.achievement.pc .achievement-list li {
+    height: .3rem;
+    line-height: .3rem
+}
+
+section.achievement.pc .badge {
+    margin-left: .1rem;
+    height: .3rem
+}
+
+section.achievement.mobile {
+    padding-top: 2%
+}
+
+section.achievement.mobile .achievement-title {
+    margin: 0 auto;
+    height: 10%
+}
+
+section.achievement.mobile .achievement-list-wrap {
+    height: 70%;
+    margin: 4% auto
+}
+
+section.achievement.mobile .achievement-list {
+    height: 100%
+}
+
+section.achievement.mobile .achievement-list li {
+    height: 6.6%;
+    line-height: .25rem
+}
+
+section.achievement.mobile .badge {
+    height: .25rem
+}
+
+section.achievement.mobile .btn-group {
+    height: 10%
+}
+
+section.achievement.mobile .btn-group img {
+    max-height: 100%
+}
+
+.explanation, .sign {
+    display: block;
+    margin: 20px auto;
+    width: 2.25rem
+}
+
+.explanation {
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 2px;
+    color: red;
+    text-align: center
+}
+
+.ASCIImation {
+    display: inline-block;
+    visibility: visible !important;
+    white-space: pre;
+    font-family: Courier, Courier new, monospace;
+    line-height: 1em;
+    margin: 0;
+    color: #20f440
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    font-size: 80px
+}
+
+body {
+    font-family: Courier;
+    font-size: .125rem
+}
+
+#app-container {
+    width: 100%;
+    height: 100%;
+    background-color: #232735;
+    color: #aab2bf
+}
+
+#progress-bar {
+    position: fixed;
+    width: 100%;
+    height: 2px
+}
+
+#progress-bar .indicator {
+    height: 100%;
+    width: 0;
+    background-color: #20f440
+}
+
+#head {
+    width: 100%;
+    z-index: 1;
+    height: .3rem;
+    background-color: #141623
+}
+
+#head .tab {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    border-radius: 2px 2px 0 0;
+    border: 1px solid #838383;
+    border-bottom: 1px solid #232735;
+    left: .245rem;
+    top: .06rem;
+    width: 1.765rem;
+    line-height: .24rem
+}
+
+#head .tab, #main {
+    background-color: #232735
+}
+
+#main {
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid #838383;
+    z-index: 0;
+    -webkit-transition: bottom .2s linear;
+    transition: bottom .2s linear;
+    top: .3rem;
+    bottom: 0;
+    padding: .1rem
+}
+
+#main #foreground-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    pointer-events: none
+}
+
+#action-bar {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-image: url(/static/img/actionbar-bg.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    z-index: 1;
+    -webkit-transition: opacity .2s linear;
+    transition: opacity .2s linear
+}
+
+#action-bar.show {
+    width: 100%;
+    opacity: 1;
+    height: .45rem
+}
+
+#action-bar .enter-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #131622;
+    border-radius: 4px;
+    border: 2px solid #20f440;
+    color: #20f440;
+    text-align: center;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    height: .35rem;
+    line-height: .3rem;
+    width: 1.9145rem;
+    margin-top: .05rem;
+    font-size: .2rem
+}
+
+#action-bar .enter-btn:active {
+    background-color: #20f440;
+    color: #131622
+}
